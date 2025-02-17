@@ -76,3 +76,12 @@ summary.lm(species_x_temp_lm)
 
 anova(species_lm, species_x_temp_lm)
 ```
+
+# Diamonds plot
+```{r load data Diamonds, include = FALSE}
+names(diamonds)
+```
+```{r summary Diamonds, echo = FALSE}
+summary(diamonds)
+```
+
