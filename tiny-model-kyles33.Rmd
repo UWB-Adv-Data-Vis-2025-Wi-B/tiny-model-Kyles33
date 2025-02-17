@@ -33,3 +33,6 @@ Note that the `echo = FALSE` parameter was added to the code chunk to prevent pr
 knitr::opts_chunk$set(echo = TRUE)
 library('tidyverse') ; library('modeldata')
 ``` 
+# introduction
+
+This R Markdown document demonstrates my abilities to use models for data analysis using a data set collected on crickets.
