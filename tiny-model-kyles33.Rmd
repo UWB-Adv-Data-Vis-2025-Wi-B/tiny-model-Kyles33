@@ -84,4 +84,15 @@ names(diamonds)
 ```{r summary Diamonds, echo = FALSE}
 summary(diamonds)
 ```
+```{r linear model diamonds, echo = FALSE}
+diamonds_lm <- lm(price ~ carat + cut, data = diamonds)
+
+ggplot(diamonds, aes(x = carat, y = price, color = cut)) +
+  geom_point() +
+  geom_smooth(method = 'lm') +
+  ggtitle("Linear Model of Diamond Price Based on Carat and Cut") +
+  xlab('Carat') +
+  ylab('Price ($)') +
+  theme_minimal()
+```
 
